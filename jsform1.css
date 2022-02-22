@@ -1,0 +1,94 @@
+@font-face {
+      font-family: sansation;
+      src: url(Delicious-Italic.otf);
+     
+  }
+.form
+{
+  
+    display: inline-block;
+    border:20px solid rgb(5, 5, 5);
+    background-color: rgb(109, 109, 109);
+    padding: 20px;
+    width:  max-content;
+    margin: auto;
+    height: max-content;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h3{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 1000;
+
+}
+
+span{
+		display: inline-block;
+       	width: 174px;
+        height: 26px;
+       	text-align: left;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+    }
+select
+{
+     width: 250px;
+     height: 23.5px;
+     display: inline;
+     background-color: lightyellow;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 1000;
+}
+select:focus
+{
+    background-color: lightcoral;
+}
+
+input
+{
+   display: inline;
+   margin-right: 100px;
+   width: 245px;
+   height: 23.5px;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 1000;
+   background-color: lightyellow;
+
+}
+input:focus
+{
+    background-color: lightcoral;
+}
+button
+{
+    
+    height: 30px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    float: left;
+}
+#show
+{
+    display: inline-block;
+
+}
+#pa
+{
+    color:aliceblue;
+    font-size: x-large;
+    font-weight: 100;
+}
+#email
+{
+    color: aliceblue;
+    font-size: x-large;
+    font-weight: 100;
+}
+

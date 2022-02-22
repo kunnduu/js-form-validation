@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Information</title>
+</head>
+<link rel="stylesheet" href="jsform1.css">
+
+<body>
+    <div class="form">
+        <form action="">
+            <span><label for="name">Login</label></span><input type="text" ,name="Name" id="login">
+            <br>
+            <br>
+            <span><label for="email">Password</label></span><input type="password" ,name="Email" id="lol"><p id="show"></p>
+            <br>
+            <br>
+            <span><label for="cname">Confirm Password</label></span><input type="password" ,name="cname" id="pink">
+            <br>
+            <br>
+            <span><label for="gender">Gender</label></span><select name="Gender">
+                <option value="male"><strong>Male</strong></option>
+                <option value="female"><strong>Female</strong></option>
+            </select>
+            <br>
+            <br>
+           <span ><label for="ccode">Email</label></span><input type="text" ,name="ccode" id="pin">
+            <br>
+            <br>
+            <p class="buttonp"><button onclick="check()">Register</button></p>
+            <br>
+            <p id="pa"></p>
+            <p id="email"></p>
+        </form>
+    </div>
+</body>
+<script>
+   function check()
+   {
+    var login = document.getElementById("login").value;
+    var loginregex=/[a-zA-Z0-9]{8,}/;
+    if(!loginregex.exec(login))
+       window.alert("Login id did not match the conditons of min length of eight characters"); 
+    var password=document.getElementById("lol").value;
+    var passregex= /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{16,}$/;
+    if(passregex.exec(password))
+      document.getElementById("show").innerHTML="Strong"; 
+    var confpass=document.getElementById("pink").value;
+    if(password !=confpass)
+       document.getElementById("pa").innerHTML="Password did not match"
+    var email=document.getElementById("pin").value;
+    var eregex=/[A-Za-z0-9]+[@]{1}[a-zA-Z]+[.com]{1}/;
+    if(!eregex.exec(email))
+       document.getElementById("email").innerHTML="Inavlid mail";
+   }
+</script>
+
+</html>
